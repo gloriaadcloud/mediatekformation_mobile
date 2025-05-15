@@ -74,36 +74,36 @@ Une fois la BDD et l'API REST installées, il reste une modification à faire da
 Dans AccesDistant.java du package moddele, se trouve la déclaration de la constante SERVERADDR qui contient l’adresse IP de l’api rest. Il faut remplacer l’adresse actuelle par celle qui correspond à votre machine. Pour les tests locaux, c’est votre ip local commençant normalement par 192.168.0 que vous pouvez trouver en tapant la commande ipconfig dans une fenêtre de commandes. Lorsque l’api sera déployée sur Internet, il faudra mettre l’adresse d’hébergement.<br>
 Pour finir de configurer Android Studio pour les tests en local, consulter l'article "Préparer l'environnement de travail" dans le wiki.
 
-#Analyse des données de formation avec Python et Power BI
-## Installer Anaconda pour le Développement Python depuis Power BI Desktop
+# Analyse des données de formation avec Python et Power BI
+## 1-Installer Anaconda pour le Développement Python depuis Power BI Desktop
 
 ![image](https://github.com/user-attachments/assets/62bcf51b-d277-4bad-a90e-9f9f6c6f312d)
 
-## Installer Power BI Desktop pour développement Python et Datavisualisation
+## 2-Installer Power BI Desktop pour développement Python et Datavisualisation
 
 ![image](https://github.com/user-attachments/assets/79bd6efa-fd1e-49e3-a83b-83ef2cd41305)
 
-## Connection à l’API mediatekformation en ligne avec Postman
+## 3-Connection à l’API mediatekformation en ligne avec Postman
 
 ![image](https://github.com/user-attachments/assets/27861c3d-c187-4bb4-ab22-01842eb10060)
 
-## Connexion à l’API via Power BI
+## 4-Connexion à l’API via Power BI
 
 ![image](https://github.com/user-attachments/assets/459ad30f-273c-49de-a2be-4a73c27de226)
 
-## Préparation des données avec le Langage M
+## 5-Préparation des données avec le Langage M
 
 ![image](https://github.com/user-attachments/assets/db46ff44-0fc9-4d38-bacf-5f7f3d7aa38b)
 
-## Création d’un modèle de donnée pour l’Analyse
+## 6-Création d’un modèle de donnée pour l’Analyse
 
 ![image](https://github.com/user-attachments/assets/391d38e0-1680-42e3-9cf3-5ee50ace48a5)
 
-## Création des tableaux de bord d’Analyse web et mobile avec Python et Power BI
+## 7-Création des tableaux de bord d’Analyse web et mobile avec Python et Power BI
 
 ![image](https://github.com/user-attachments/assets/2a4bf477-c1f5-4d7b-864f-8710ab400059)
 
-## Tableau de bord d'Abalyse de données : Version web
+## 8-Tableau de bord d'Abalyse de données : Version web
 
 ![image](https://github.com/user-attachments/assets/62c615b1-cfa0-4e15-8dce-732fe4b256ce)
 
@@ -111,7 +111,7 @@ Pour finir de configurer Android Studio pour les tests en local, consulter l'art
 ![image](https://github.com/user-attachments/assets/6d5664db-0083-478e-bbe9-d10f5ea809ee)
 
 
-## Tableau de bord d'Abalyse de données : Version mobile :  
+## 9-Tableau de bord d'Abalyse de données : Version mobile :  
 
 ![image](https://github.com/user-attachments/assets/d833400b-0096-47d7-a078-fb35599eb9fc)
 ![image](https://github.com/user-attachments/assets/b856f5f5-4b17-4490-af6b-e8d621866721)
