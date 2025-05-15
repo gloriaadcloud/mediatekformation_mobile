@@ -73,3 +73,18 @@ L'application a été faite avec la version "Android Studio Flamingo (2022.2.1).
 Une fois la BDD et l'API REST installées, il reste une modification à faire dans l'application :<br>
 Dans AccesDistant.java du package moddele, se trouve la déclaration de la constante SERVERADDR qui contient l’adresse IP de l’api rest. Il faut remplacer l’adresse actuelle par celle qui correspond à votre machine. Pour les tests locaux, c’est votre ip local commençant normalement par 192.168.0 que vous pouvez trouver en tapant la commande ipconfig dans une fenêtre de commandes. Lorsque l’api sera déployée sur Internet, il faudra mettre l’adresse d’hébergement.<br>
 Pour finir de configurer Android Studio pour les tests en local, consulter l'article "Préparer l'environnement de travail" dans le wiki.
+
+
+### Application Android 
+
+Dans le repository nous avons laisser un ficher apk qui est l'executable de notre projet.
+
+### Le filtre 
+
+Dans access Distant nous avons modifier la variable SERVERADDR pour qu'elle soit lié a notre api en ligne 
+
+![ajoutfavoris.jpg](ajoutfavoris.jpg)
+![page categorie.jpg](page%20categorie.jpg)
+![filtre.jpg](filtre.jpg)
+
+Nous avons ajouter une classe favoris dans modele pour nous permettre de pouvoir sauvegarder et afficher les formations favoris 
