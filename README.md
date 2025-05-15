@@ -90,14 +90,6 @@ Dans access Distant nous avons modifier la variable SERVERADDR pour qu'elle soit
 Nous avons ajouter une classe favoris dans modele pour nous permettre de pouvoir sauvegarder et afficher les formations favoris 
 # Analyse des données de formation avec Python et Power BI
 
-Pour utiliser l'application d’analyse de données de formation en mode développeur :
-
-- Téléchargez Power BI Desktop
-  
-- Téléchargez le fichier ZIP disponible dans le README : Mobile_AP2_Python_PowerBI.zip
-
-- Extrayez le contenu du ZIP, puis ouvrez le fichier .pbix avec Power BI Desktop.
-
 ## 1-Installer Anaconda pour le Développement Python depuis Power BI Desktop
 
 ![image](https://github.com/user-attachments/assets/62bcf51b-d277-4bad-a90e-9f9f6c6f312d)
