@@ -24,6 +24,7 @@ public class FavorisActivity extends AppCompatActivity {
     private Controle controle;
     private RecyclerView lstFormations;
     private Favoris favorisDAO;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

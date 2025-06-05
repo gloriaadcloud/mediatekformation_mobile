@@ -29,6 +29,7 @@ public class FormationListAdapter extends RecyclerView.Adapter<FormationListAdap
     private Context context;
     private Controle controle;
     private Favoris favorisDAO;
+    
 
     /**
      * Constructeur : valorise les propriétés privées

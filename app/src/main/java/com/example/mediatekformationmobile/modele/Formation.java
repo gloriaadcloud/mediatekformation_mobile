@@ -4,6 +4,7 @@ import com.example.mediatekformationmobile.outils.MesOutils;
 
 import java.util.Date;
 
+
 public class Formation implements Comparable {
 
     private int id;

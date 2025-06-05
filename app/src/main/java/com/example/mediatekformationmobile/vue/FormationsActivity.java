@@ -36,6 +36,7 @@ public class FormationsActivity extends AppCompatActivity {
 
     private RecyclerView lstFormations;
     private CheckBox checkBoxRecent;
+    
 
 
     @Override

@@ -10,6 +10,7 @@ import com.example.mediatekformationmobile.outils.MySQLiteOpenHelper;
 
 import java.util.ArrayList;
 
+
 public class Favoris {
     private static final String TAG = "Favoris";
     private MySQLiteOpenHelper dbHelper;

@@ -27,6 +27,7 @@ public class Controle {
     /**
      * constructeur privé
      */
+    
     private Controle() {
         super();
     }
