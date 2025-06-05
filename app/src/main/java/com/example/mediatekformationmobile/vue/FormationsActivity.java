@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import android.widget.CheckBox;
 
 public class FormationsActivity extends AppCompatActivity {
 
@@ -34,6 +35,8 @@ public class FormationsActivity extends AppCompatActivity {
     private static final String TAG = "FormationsActivity";
 
     private RecyclerView lstFormations;
+    private CheckBox checkBoxRecent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,27 +61,44 @@ public class FormationsActivity extends AppCompatActivity {
         controle.setFormationsActivity(this);
         btnFiltrer = findViewById(R.id.btnFiltrer);
         txtFiltre = findViewById(R.id.txtFiltre);
+
+        checkBoxRecent = findViewById(R.id.checkBoxRecent);
+
         lstFormations = findViewById(R.id.lstFormations);
 
         lstFormations.setLayoutManager(new LinearLayoutManager(this));
 
         // Écouter le clic sur le bouton Filtrer
         btnFiltrer.setOnClickListener(new View.OnClickListener() {
+
             @Override
+
             public void onClick(View v) {
                 String filtre = txtFiltre.getText().toString().trim();
-                Log.d(TAG, "Texte du filtre: " + filtre);
+                boolean filtrerRecent = checkBoxRecent.isChecked(); // ← récupère l'état de la checkbox
+                Log.d(TAG, "Texte du filtre: " + filtre + ", Filtrer récentes: " + filtrerRecent);
 
-                // Sauvegarder l'état des favoris avant filtrage
+                // Sauvegarder l'état des favoris
                 sauvegarderEtatFavoris();
 
-                if (filtre.isEmpty()) {
-                    // Si vide, charger toutes les formations
-                    AccesDistant.getInstance().envoi("tous", "formations", null);
-                } else {
-                    // Filtrer les formations
-                    controle.filtrerFormations(filtre);
+                ArrayList<Formation> toutesLesFormations = controle.getLesFormations();
+                ArrayList<Formation> resultat = new ArrayList<>();
+
+                if (toutesLesFormations != null) {
+                    for (Formation formation : toutesLesFormations) {
+                        boolean correspondTexte = filtre.isEmpty() || formation.getTitle().toLowerCase().contains(filtre.toLowerCase());
+                        boolean estRecente = !filtrerRecent || formation.estMoinsDe90Jours(); // ← nouvelle condition
+
+                        if (correspondTexte && estRecente) {
+                            resultat.add(formation);
+                        }
+                    }
                 }
+
+                // Afficher la liste filtrée
+                Collections.sort(resultat, Collections.<Formation>reverseOrder());
+                FormationListAdapter adapter = new FormationListAdapter(resultat, FormationsActivity.this);
+                lstFormations.setAdapter(adapter);
 
                 // Informer l'utilisateur
                 Toast.makeText(FormationsActivity.this,

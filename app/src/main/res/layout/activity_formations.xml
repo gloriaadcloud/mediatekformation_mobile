@@ -24,6 +24,12 @@
                 android:ems="10"
                 android:inputType="textPersonName" />
 
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBoxRecent"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Afficher formations < 90 jours" />-->
+
             <Button
                 android:id="@+id/btnFiltrer"
                 android:layout_width="wrap_content"

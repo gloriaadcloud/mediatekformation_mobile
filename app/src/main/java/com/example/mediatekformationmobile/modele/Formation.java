@@ -67,6 +67,12 @@ public class Formation implements Comparable {
         isFavorite = favorite;
     }
 
+    public boolean estMoinsDe90Jours() {
+        long diff = System.currentTimeMillis() - this.getPublishedAt().getTime();
+        return diff <= (90L * 24 * 60 * 60 * 1000); // 90 jours en millisecondes
+    }
+
+    //pour mémoriser si une formation est favorite.
     public boolean toggleFavorite() {
         isFavorite = !isFavorite;
         return isFavorite;
